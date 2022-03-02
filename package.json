@@ -1,22 +1,35 @@
 {
-  "name": "javascript-101",
-  "version": "1.0.0",
-  "description": "Starting code for First JavaScript ES6 lecture",
-  "main": "index.js",
-  "repository": "https://github.com/lewagon/webpack-boilerplate",
-  "author": "ssaunier",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/preset-env": "^7.1.6",
-    "babel-loader": "^8.0.4",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "gh-pages": "^1.1.0",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "giphy-api": "^2.0.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "lint": "eslint './src/**/*.js' './src/**/*.jsx'",
+    "deploy": "webpack -p && gh-pages -d dist"
+  }
 }
